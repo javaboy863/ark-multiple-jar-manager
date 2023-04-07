@@ -1,0 +1,37 @@
+server:
+  port: 8691
+appCode: ark-multiple-jar-manager
+
+spring:
+  redis:
+    database: 0
+    host: 1.2.3.6
+    port: 6379
+    password:
+    timeout: 2000
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 2000
+        max-idle: 8
+        min-idle: 0
+
+zookeeper:
+  pop:
+    address: ${docker.zookeeper.address}
+
+url:
+  douyin: https://openapi-fxg.jinritemai.com/
+  eleme: https://api-be.ele.me/
+  jingdongdaojia: https://openapi.jddj.com/
+  jingdongdaojiaTool: https://opentool.jddj.com/
+  zhaohangdaojia: http://openapigateway.csst.cmburl.cn/
+  baiduxiaodian: https://openapi.baidu.com/rest/2.0/bmp/
+  baiduxiaodianUrl: https://openapi.baidu.com/
+  jingchao: https://api.jd.com/routerjson
+  meituan: https://waimaiopen.meituan.com/
+  youzan: https://open.youzanyun.com/
+
+
+
+
